@@ -16,6 +16,11 @@ Cisco AI Defense (inspect/chat)
                                (classifications, rules, event ID)
 ```
 
+
+
+![Topology](https://github.com/Gyuri1/lm-defense-gateway/topology.png)
+
+
 ## Features
 
 - Drop-in OpenAI API endpoint (`/v1/chat/completions`, `/v1/models`, `/health`).
