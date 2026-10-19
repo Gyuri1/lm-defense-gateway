@@ -1,0 +1,24 @@
+[Unit]
+Description=llm-defense-gateway - OpenAI-compatible LLM gateway with Cisco AI Defense inspection
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=llm-defense-gateway
+Group=llm-defense-gateway
+WorkingDirectory=/opt/llm-defense-gateway
+EnvironmentFile=/opt/llm-defense-gateway/.env
+Environment=PYTHONUNBUFFERED=1
+ExecStart=/opt/llm-defense-gateway/venv/bin/python /opt/llm-defense-gateway/llm_defense_gateway.py
+Restart=always
+RestartSec=3
+
+# Hardening
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=full
+ProtectHome=true
+
+[Install]
+WantedBy=multi-user.target
