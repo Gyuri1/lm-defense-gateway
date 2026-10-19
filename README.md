@@ -43,7 +43,7 @@ Cisco AI Defense (inspect/chat)
 sudo useradd --system --no-create-home --shell /usr/sbin/nologin llm-defense-gateway
 
 # 2. Clone the repository
-sudo git clone https://github.com/<your-org>/llm-defense-gateway.git /opt/llm-defense-gateway
+sudo git clone https://github.com/Gyuri1/llm-defense-gateway.git /opt/llm-defense-gateway
 cd /opt/llm-defense-gateway
 
 # 3. Create a virtual environment and install dependencies
