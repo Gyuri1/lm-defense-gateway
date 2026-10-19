@@ -18,7 +18,7 @@ Cisco AI Defense (inspect/chat)
 
 
 
-![Topology](https://github.com/Gyuri1/lm-defense-gateway/topology.png)
+![Topology](https://github.com/Gyuri1/lm-defense-gateway/blob/main/topology.png)
 
 
 ## Features
